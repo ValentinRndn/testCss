@@ -12,6 +12,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
 }
 
 nav ul {
@@ -91,7 +92,7 @@ footer {
   text-align: center;
   background-color: black;
   margin-top: 20px;
-  padding: 10px;
+  padding: 15px;
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -120,7 +121,23 @@ Footer p {
 }
 .container-perso img {
   width: 200px;
+}
 
+.maisons {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.maison {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+  transition: transform 0.3s ease-in-out;
+}
 
 @media screen and (max-width: 768px) {
   .container-perso {
@@ -166,8 +183,8 @@ Footer p {
 }
 
 
-@media screen and (max-width: 1467px) {
+@media screen and (min-width: 1467px) {
     .book {
         margin-bottom: 60px;
     }
-}
+    
